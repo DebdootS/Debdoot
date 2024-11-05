@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
   text-align: center;
-  padding: 2em 1em;
+  padding: 3em 1em;
   background-color: #0044cc;
   color: #fff;
   position: relative;
@@ -27,18 +27,23 @@ header p {
 }
 
 nav a {
-  color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #0044cc;
   font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #c0d6e4;
 }
 
 /* Profile Picture */
 .profile {
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -48,29 +53,40 @@ nav a:hover {
   border-radius: 50%;
   margin-bottom: 15px;
   border: 3px solid #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Social Links */
+.social-links {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
 .social-links a {
   margin: 0 10px;
   display: inline-block;
 }
 
 .social-links img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.2s ease;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .social-links img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 /* Section Styles */
 section {
-  padding: 2em 1em;
+  padding: 2em;
   max-width: 800px;
-  margin: auto;
+  margin: 2em auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #ffffff;
 }
 
 section h2 {
@@ -81,7 +97,7 @@ section h2 {
 /* Footer Styles */
 footer {
   text-align: center;
-  padding: 1em;
-  background-color: #0044cc;
+  padding: 1.5em;
+  background-color: #003399;
   color: #fff;
 }
