@@ -1,4 +1,4 @@
-/* Custom styling */
+/* General styling */
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -7,19 +7,35 @@ body {
     height: 100vh;
     background: linear-gradient(to right, #1d2671, #c33764);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #about {
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    padding: 3rem 0;
 }
 
 #services {
     background: linear-gradient(to right, #f3ec78, #af4261);
+    padding: 3rem 0;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
 }
 
 .card-title {
     font-weight: 600;
-    color: #333;
+    font-size: 1.2rem;
 }
 
 .navbar-brand {
@@ -36,7 +52,21 @@ footer {
     color: #ccc;
 }
 
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
