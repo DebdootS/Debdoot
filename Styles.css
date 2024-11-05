@@ -3,22 +3,40 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#home {
+    height: 100vh;
+    background: linear-gradient(to right, #1d2671, #c33764);
+    color: white;
+}
+
+#about {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+#services {
+    background: linear-gradient(to right, #f3ec78, #af4261);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #333;
+}
+
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-#home {
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg') no-repeat center center/cover;
-}
-
-.card-title {
-    font-weight: 600;
-    color: #4CAF50;
+.navbar .nav-link {
+    color: #fff;
 }
 
 footer {
     background-color: #333;
     color: #ccc;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
