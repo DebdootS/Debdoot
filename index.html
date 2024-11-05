@@ -4,49 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debdooot Sarkar - System Integration Consultant</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Debdooot Sarkar</h1>
-        <p>Independent System Integration Consultant</p>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Debdooot Sarkar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="home">
-        <h2>Welcome to My Consulting Services</h2>
-        <p>I provide tailored solutions to integrate your technology systems seamlessly, leveraging the latest tools and in-demand technologies.</p>
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center text-center text-light" style="background: url('banner.jpg') no-repeat center center/cover; height: 100vh;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">System Integration Consulting</h1>
+            <p class="lead">Helping you connect and optimize your technology stack.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>With expertise across cloud computing, IoT, AI, and cybersecurity, I help companies optimize their operations and enhance data security through smart integration strategies.</p>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">I’m an independent consultant specializing in system integration, cloud computing, IoT, AI, and cybersecurity. My goal is to optimize business operations and enhance data security through smart integration strategies.</p>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Services Offered</h2>
-        <ul>
-            <li><strong>Cloud Integration:</strong> AWS, Azure, Google Cloud</li>
-            <li><strong>IoT Solutions:</strong> Device management, Edge Computing</li>
-            <li><strong>AI & Machine Learning Integration:</strong> Model deployment and automation</li>
-            <li><strong>Data Integration:</strong> API management, real-time data processing</li>
-        </ul>
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Services Offered</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Integration</h5>
+                            <p class="card-text">Expertise in AWS, Azure, Google Cloud, and multi-cloud solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">IoT Solutions</h5>
+                            <p class="card-text">Device management, Edge Computing, and real-time data insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">AI & ML Integration</h5>
+                            <p class="card-text">Implementing AI models, automation, and advanced analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Integration</h5>
+                            <p class="card-text">API management, data pipeline creation, and real-time integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: debdooot.sarkar@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/debdooot-sarkar">linkedin.com/in/debdooot-sarkar</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <p class="text-center">Email: <a href="mailto:debdooot.sarkar@example.com">debdooot.sarkar@example.com</a></p>
+            <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/debdooot-sarkar" target="_blank">linkedin.com/in/debdooot-sarkar</a></p>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2024 Debdooot Sarkar | Independent System Integration Consultant</p>
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>© 2024 Debdooot Sarkar | System Integration Consultant</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
